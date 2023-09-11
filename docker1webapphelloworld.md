@@ -40,5 +40,17 @@ CMD /root/run_apache.sh
 <p>docker run -t -i -p 80:80 hello-world</p>
 <hr>
 <p><a href="http://localhost/">http://localhost/</a>.</p>
-<p>docker-machine ip machine-name</p>
+<pre><code>docker scout quickview
+</code></pre>
+<p><strong>Push Docker Image to Docker Hub</strong></p>
+<pre><code>docker login 
+</code></pre>
+<p><code>docker tag hello-world:latest atuljkamble/hello-world</code></p>
+<p>Then list images</p>
+<pre><code>docker images 
+</code></pre>
+<p>Check image with latest tag<br>
+Push image to Docker Hub</p>
+<pre><code>docker push atuljkamble/hello-world
+</code></pre>
 
